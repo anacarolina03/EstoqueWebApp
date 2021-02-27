@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueWebApp", "EstoqueWebApp\EstoqueWebApp.csproj", "{67C0B1D9-4936-484F-A139-ED94B3F8A0DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67C0B1D9-4936-484F-A139-ED94B3F8A0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C0B1D9-4936-484F-A139-ED94B3F8A0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C0B1D9-4936-484F-A139-ED94B3F8A0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C0B1D9-4936-484F-A139-ED94B3F8A0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71DF2637-3B49-4D9B-A5F8-FD85A5674F9A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+<form #formLogin="ngForm">
+  <div class="form-group">
+    <label for="descricao">Usuário</label>
+    <input [(ngModel)]="usuario.nomeUsuario" type="text" class="form-control" name="nomeUsuario" required>
+  </div>
+  <div class="form-group">
+    <label for="marca">Senha</label>
+    <input [(ngModel)]="usuario.senha" type="password" class="form-control" name="senha" required>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="logar();" [disabled]="!formLogin.form.valid">Entrar</button>
+</form>

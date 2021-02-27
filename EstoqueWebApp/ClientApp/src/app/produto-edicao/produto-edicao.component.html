@@ -1,0 +1,28 @@
+<form #formEdicao="ngForm">
+  <div class="form-group">
+    <label for="descricao">Descrição</label>
+    <input [(ngModel)]="produto.descricao" type="text" class="form-control" name="descricao" required>
+  </div>
+  <div class="form-group">
+    <label for="marca">Marca</label>
+    <input [(ngModel)]="produto.marca" type="text" class="form-control" name="marca" required>
+  </div>
+  <div class="form-group">
+    <label for="preco">Preço</label>
+    <input [(ngModel)]="produto.preco" type="number" class="form-control" name="preco" required>
+  </div>
+  <div class="form-group">
+    <label for="dataLancamento">Data de Lançamento</label>
+    <input type="date" class="form-control" [ngModel]="produto.dataLancamento | date:'yyyy-MM-dd'" (ngModelChange)="produto.dataLancamento = $event" name="dataLancamento" required />
+  </div>
+  <div class="form-group">
+    <label for="codTipoProduto">Tipo</label>
+    <select class="form-control" [(ngModel)]="produto.codTipoProduto" name="codTipoProduto" required>
+      <option [ngValue]="tipo.codTipoProduto" *ngFor="let tipo of tiposProduto">
+        {{tipo.descricao}}
+      </option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="salvar();" [disabled]="!formEdicao.form.valid">Salvar</button>
+</form>

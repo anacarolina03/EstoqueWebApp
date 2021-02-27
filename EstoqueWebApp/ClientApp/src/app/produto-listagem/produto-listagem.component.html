@@ -1,0 +1,21 @@
+<button type="button" class="btn btn-primary btn-sm" (click)="editar(0)">Incluir</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nome</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of produtos">
+      <td>{{ produto.codProduto }}</td>
+      <td>{{ produto.descricao }}</td>
+      <td>
+        <button type="button" class="btn btn-primary btn-sm" (click)="editar(produto.codProduto)">Editar</button>
+        <button type="button" class="btn btn-danger btn-sm" (click)="excluir(produto.codProduto)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
